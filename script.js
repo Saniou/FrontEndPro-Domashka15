@@ -25,9 +25,9 @@ output.textContent += `${key}: ${value};\n `;
 }
   
 function validateName() {
-    let name = document.querySelector("#name").value;
-    let name2 = document.querySelector("#name");
-    let reName = /^([\S]+)\s([\S]+)\s([\S]+)/g;
+    const name = document.querySelector("#name").value;
+    const name2 = document.querySelector("#name");
+    const reName = /^([\S]+)\s([\S]+)\s([\S]+)/g;
     
     if(name.trim()==""){
         name2.style.border = "red solid 2px";
@@ -40,9 +40,9 @@ function validateName() {
 }
    
 function validateEmail() {
-    let email = document.querySelector("#email").value;
-    let email2 = document.querySelector("#email");
-    let reEmail = /([a-z A-Z 0-9 \. _]+)@([a-z A-Z]+).([a-z A-Z]{2,6})/g;
+    const email = document.querySelector("#email").value;
+    const email2 = document.querySelector("#email");
+    const reEmail = /([a-z A-Z 0-9 \. _]+)@([a-z A-Z]+).([a-z A-Z]{2,6})/g;
     
     if(email.trim()==""){
         email2.style.border = "red solid 2px";
@@ -55,9 +55,9 @@ function validateEmail() {
 }
 
 function validatePhone() {
-    let phone = document.querySelector("#phone").value;
-    let phone2 = document.querySelector("#phone");
-    let rePhone = /[0-9]\d{11}/g;
+    const phone = document.querySelector("#phone").value;
+    const phone2 = document.querySelector("#phone");
+    const rePhone = /[0-9]\d{11}/g;
     
     if(phone.trim()==""){
         phone2.style.border = "red solid 2px";
