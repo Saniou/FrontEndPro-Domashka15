@@ -66,5 +66,20 @@ select option{
 
 .result{
     color: #ccc;
-    overflow-wrap: break-word;
+}
+
+.name__error{
+    color: red;
+}
+
+.email__error{
+    color: red;
+}
+
+.phone__error{
+    color: red;
+}
+
+.result__error{
+    color: red;
 }
